@@ -32,6 +32,10 @@ assetic:
     use_controller: false
     bundles: [AppBundle]
     filters:
+        lessphp:
+            apply_to: "\.less$"
+            formatter: "compressed"
+            preserve_comments: false
         uglifyjs2:
             bin: /usr/local/bin/uglifyjs
 

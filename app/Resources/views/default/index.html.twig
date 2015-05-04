@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 
 {% block body %}
-    Homepage.
+    <h1>Hello</h1>
 {% endblock %}
 
 {% block javascripts %}
@@ -14,4 +14,10 @@
     %}
         <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
+{% endblock %}
+
+{% block stylesheets %}
+    {% stylesheets '@AppBundle/Resources/public/less/*' %}
+        <link rel="stylesheet" href="{{ asset_url }}">
+    {% endstylesheets %}
 {% endblock %}
