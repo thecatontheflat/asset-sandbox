@@ -3,3 +3,13 @@
 {% block body %}
     Homepage.
 {% endblock %}
+
+{% block javascripts %}
+    {% javascripts
+        '@AppBundle/Resources/public/js/calculator.js'
+        '@AppBundle/Resources/public/js/randomizer.js'
+        '@AppBundle/Resources/public/js/init.js'
+    %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}

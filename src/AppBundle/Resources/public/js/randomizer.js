@@ -1,4 +1,4 @@
-Zencap = Zencap || {};
+var Zencap = Zencap || {};
 
 Zencap.randomizer = {
     init: function() {

@@ -1,4 +1,4 @@
-Zencap = Zencap || {};
+var Zencap = Zencap || {};
 
 Zencap.calculator = {
     init: function() {
